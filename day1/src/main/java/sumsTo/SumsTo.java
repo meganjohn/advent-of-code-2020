@@ -3,12 +3,7 @@ package main.java.sumsTo;
 import java.util.ArrayList;
 
 public class SumsTo {
-
-    public SumsTo() {
-
-    }
-
-    public int[] twoEqualsTarget(ArrayList<Integer> accountsList, int targetTotal) {
+    public static int[] twoEqualsTarget(ArrayList<Integer> accountsList, int targetTotal) {
         int[] sumsToTotal = new int[2];
         ArrayList<Integer> subtractedFromTarget = new ArrayList<>();
         for (int e : accountsList) {
@@ -22,7 +17,7 @@ public class SumsTo {
         return sumsToTotal;
     }
 
-    public int[] threeEqualsTarget(ArrayList<Integer> accountsList, int targetTotal) {
+    public static int[] threeEqualsTarget(ArrayList<Integer> accountsList, int targetTotal) {
         int[] sumsToTotal = new int[3];
         for (int i = 0; i < accountsList.size()-2; i++) {
             for (int j = 1; j < accountsList.size()-1; j++) {

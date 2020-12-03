@@ -12,11 +12,10 @@ public class App {
         AccountsReader reader = new AccountsReader("/Users/Megan.John/PROJECTS/AdventOfCode/src/main/resources/accounts");
         ArrayList<Integer> accountsList = reader.getAccountFigures();
 
-        SumsTo summationCalculator = new SumsTo();
-        int[] equals2020 = summationCalculator.twoEqualsTarget(accountsList,2020);
+        int[] equals2020 = SumsTo.twoEqualsTarget(accountsList,2020);
         int productOfTwoNumbers = Multiplier.multiplyTwoNumbers(equals2020);
 
-        int[] tripletFor2020 = summationCalculator.threeEqualsTarget(accountsList, 2020);
+        int[] tripletFor2020 = SumsTo.threeEqualsTarget(accountsList, 2020);
         int productOfThreeNumbers = Multiplier.multiplyThreeNumbers(tripletFor2020);
 
 
